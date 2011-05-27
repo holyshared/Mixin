@@ -1,4 +1,4 @@
-name: Class.Attachment
+name: Class
 
 web: "[http://sharedhat.com](http://sharedhat.com)"
 
@@ -15,7 +15,7 @@ sources:
 
 author: Noritaka Horio
 
-category: Realtime
+category: Utilities
 
 tags: [utils, mixin, class]
 

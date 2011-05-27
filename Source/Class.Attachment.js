@@ -1,6 +1,6 @@
 /*
 ---
-name: Class.Attachment
+name: Attachment
 
 description: 
 
@@ -24,19 +24,22 @@ provides: [Attachment]
 
 var Attachment = this.Attachment = new Class({
 
-	handlers: {},
+	_attachHandlers: {},
 
-//	attachEvent: 'click',
-//	attachHandler: null,
+	attach: function(selecter){
+		if (!Type.isFunction(this.attachHandler)){
 
-	attach: funmction(selecter){
+		}
 		var elements = $$(selecter);
-		this.handlers[selecter] = elements;
+		this._attachHandlers[selecter] = elements;
 		elements.addEvent(this.attachEvent, this.attachHandler);
 	},
 
-	dettach: funmction(selecter){
-		var handler = this.handlers[selecter];
+	dettach: function(selecter){
+		if (!this._attachHandlers[selecter]){
+
+		}
+		var handler = this._attachHandlers[selecter];
 		elements.removeEvent(this.attachEvent, this.attachHandler);
 	}
 
