@@ -1,17 +1,13 @@
 (function(){
 
-var Mock = new Class({
+var AttachMock = this.AttachMock = new Class({
 
-	Implemenets: [Attachment],
+	Implements: [Attachment],
 
 	attachEvent: 'click',
-	attachHandler: this.trrigerHandler,
-
-	initiazlize: function(){
-	},
-
-	trrigerHandler: function(event){
-alert('aaa');
+	attachHandler: function(event){
+		event.preventDefault();
+		alert('attached');
 	}
 
 });

@@ -49,3 +49,4 @@ var Attachment = this.Attachment = new Class({
 });
 
 }($$));
+

@@ -1,0 +1,28 @@
+<script type="text/javascript" src="/depender/build?require=Mixin/Attachment"></script>
+<script type="text/javascript">
+(function(){
+
+	var Mock = new Class({
+
+		Implements: [Attachment],
+
+		attachEvent: 'click',
+		attachHandler: function(event){
+			alert(this.get('href'));
+		}
+
+	});
+
+	window.addEventListener('load', function(){
+
+		var mock = new Mock();
+		mock.attach('#attachEvent a');
+
+	}, false);
+
+}());
+</script>
+<ul id="attachEvent">
+	<li><a href="#foo">foo</a></li>
+	<li><a href="#bar">bar</a></li>
+</ul>

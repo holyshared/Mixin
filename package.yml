@@ -1,8 +1,8 @@
-name: Class
+name: Mixin
 
 web: "[http://sharedhat.com](http://sharedhat.com)"
 
-description: ""
+description: "It builds in the class and crowding and a variety of Mixin classes are offered."
 
 authors: "[Noritaka Horio](http://sharedhat.com)"
 
@@ -21,6 +21,6 @@ tags: [utils, mixin, class]
 
 current: 1.0
 
-docs: http://holyshared.github.com/class-attachment/docs
+#docs: http://holyshared.github.com/Mixin/docs
 
-demo: http://holyshared.github.com/class-attachment/
+demo: http://holyshared.github.com/Mixin/
