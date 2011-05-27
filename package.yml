@@ -1,0 +1,26 @@
+name: Class.Attachment
+
+web: "[http://sharedhat.com](http://sharedhat.com)"
+
+description: ""
+
+authors: "[Noritaka Horio](http://sharedhat.com)"
+
+license: "[MIT License](http://holyshared.github.com/class-attachment/license.txt)"
+
+copyright: "&copy; [Noritaka Horio](http://sharedhat.com)"
+
+sources:
+  - "Source/Class.Attachment.js"
+
+author: Noritaka Horio
+
+category: Realtime
+
+tags: [utils, mixin, class]
+
+current: 1.0
+
+docs: http://holyshared.github.com/class-attachment/docs
+
+demo: http://holyshared.github.com/class-attachment/
