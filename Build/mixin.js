@@ -39,11 +39,16 @@ var Attachment = this.Attachment = new Class({
 	},
 
 	dettach: function(selecter){
-		if (!this._attachHandlers[selecter]){
+		if (!this.isAttached(selecter)){
 			throw new Error('There is no attached event handler corresponding to the selector.');
 		}
 		var elements = this._attachHandlers[selecter];
 		elements.removeEvent(this.attachEvent, this.attachHandler);
+		delete this._attachHandlers[selecter];
+	},
+
+	isAttached: function(selecter){
+		return (this._attachHandlers[selecter]) ? true : false;
 	}
 
 });
